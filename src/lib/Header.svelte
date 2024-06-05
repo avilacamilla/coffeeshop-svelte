@@ -29,30 +29,48 @@
 <style>
     .header-container {
         display: flex;
+        margin: 0;
+        padding: 0;
         width: 100%;
+        background-color: antiquewhite;
     }
 
     .header-list-item-container {
         display: flex;
-        gap: 1rem;
+        gap: 1.6rem;
         width: 100%;
     }
 
     .list-item {
         display: flex;
+        justify-content: center;
         align-items: center;
-        list-style-type: none;        
-    }
-
-    .item-logo {
-        width: 40%;
+        width: 10rem;
+        list-style-type: none;
+        cursor: pointer;    
     }
 
     .list-item-ancor {
         text-decoration: none;
+        font-size: 1.3rem;
+        color: #3b2525;
     }
 
-    .list-item-ancor-image {
+    .list-item-ancor:hover {
+        color: #3b2525c0;
+    }
+
+    .item-logo {
         width: 20rem;
     }
+
+  .list-item-ancor-image {
+    width: 100%;
+    transition: transform 0.3s ease;
+  }
+
+  .list-item-ancor-image:hover {
+    transform: scale(1.1);
+  }
+
 </style>
