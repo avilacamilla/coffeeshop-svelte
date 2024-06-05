@@ -1,9 +1,18 @@
 <script>
-
+    import coffee_logo from '$lib/images/coffee-logo.png';
 </script>
 
 <nav class="header-container">
     <ul class="header-list-item-container">
+        <li class="list-item item-logo">
+            <a href="/" class="list-item-ancor">
+                <img 
+                    src={coffee_logo} 
+                    alt="" 
+                    class="list-item-ancor-image"
+                >
+            </a>
+        </li>        
         <li class="list-item">
             <a href="/" class="list-item-ancor">Início</a>
         </li>
@@ -16,6 +25,7 @@
     </ul>
 </nav>
 
+
 <style>
     .header-container {
         display: flex;
@@ -24,15 +34,25 @@
 
     .header-list-item-container {
         display: flex;
-        gap: 2rem;
+        gap: 1rem;
         width: 100%;
     }
 
     .list-item {
+        display: flex;
+        align-items: center;
         list-style-type: none;        
+    }
+
+    .item-logo {
+        width: 40%;
     }
 
     .list-item-ancor {
         text-decoration: none;
+    }
+
+    .list-item-ancor-image {
+        width: 20rem;
     }
 </style>
