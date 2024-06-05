@@ -12,3 +12,10 @@
         <slot />
     </main>
 </div>
+
+<style>
+    .layout-container {
+        margin: 0;
+        padding: 0;
+    }
+</style>
