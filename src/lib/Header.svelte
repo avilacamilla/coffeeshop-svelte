@@ -17,18 +17,28 @@
             <a href="/" class="list-item-ancor">Início</a>
         </li>
         <li class="list-item">
-            <a href="/about" class="list-item-ancor">Quem é a Coffee?</a>
+            <a href="/about" class="list-item-ancor">Menu</a>
         </li>
         <li class="list-item">
             <a href="/contact" class="list-item-ancor">Contato</a>
         </li>
+        <li class="list-item">
+            <a href="/contact" class="list-item-ancor">Sobre</a>
+        </li>
     </ul>
+
+    <div class="header-btn-act-container">
+        <button class="header-btn-act">
+            Pede um café
+        </button>
+    </div>
 </nav>
 
 
 <style>
     .header-container {
         display: flex;
+        justify-content: space-between;
         margin: 0;
         padding: 0;
         width: 100%;
@@ -45,7 +55,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 10rem;
+        width: 12rem;
         list-style-type: none;
         cursor: pointer;    
     }
@@ -54,6 +64,8 @@
         text-decoration: none;
         font-size: 1.3rem;
         color: #3b2525;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
     }
 
     .list-item-ancor:hover {
@@ -71,6 +83,13 @@
 
   .list-item-ancor-image:hover {
     transform: scale(1.1);
+  }
+
+  .header-btn-act-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
   }
 
 </style>
