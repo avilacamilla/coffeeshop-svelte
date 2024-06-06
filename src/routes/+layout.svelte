@@ -20,6 +20,7 @@
         gap: 0;
         margin: 0;
         padding: 0;
+        height: 100vh;
         background-color: #3b2525;
     }
 </style>
