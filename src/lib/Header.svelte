@@ -66,30 +66,49 @@
         color: #3b2525;
         font-family: "Poppins", sans-serif;
         font-weight: 300;
+        position: relative;
+    }
+
+    .list-item-ancor::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        left: 0;
+        background: #3b2525;
+        transition: width 0.4s ease, left 0.3s ease;
+    }
+
+    .list-item-ancor:hover::after {
+        width: 100%;
+        left: 0;
     }
 
     .list-item-ancor:hover {
-        color: #3b2525c0;
+        color: #3b2525e2;
     }
+
 
     .item-logo {
         width: 20rem;
     }
 
-  .list-item-ancor-image {
-    width: 100%;
-    transition: transform 0.3s ease;
-  }
+    .list-item-ancor-image {
+        width: 100%;
+        transition: transform 0.3s ease;
+    }
 
-  .list-item-ancor-image:hover {
-    transform: scale(1.1);
-  }
+    .list-item-ancor-image:hover {
+        transform: scale(1.1);
+    }
 
-  .header-btn-act-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-  }
+    .header-btn-act-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
 
 </style>
