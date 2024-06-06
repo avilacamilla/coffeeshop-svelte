@@ -15,7 +15,11 @@
 
 <style>
     .layout-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
         margin: 0;
         padding: 0;
+        background-color: #3b2525;
     }
 </style>
