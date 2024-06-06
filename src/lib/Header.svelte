@@ -5,7 +5,7 @@
 <nav class="header-container">
     <ul class="header-list-item-container">
         <li class="list-item item-logo">
-            <a href="/" class="list-item-ancor">
+            <a href="/" class="list-item-ancor-logo">
                 <img 
                     src={coffee_logo} 
                     alt="" 
@@ -29,7 +29,7 @@
 
     <div class="header-btn-act-container">
         <button class="header-btn-act">
-            Pede um café
+            Faça sua reserva!
         </button>
     </div>
 </nav>
@@ -47,7 +47,6 @@
 
     .header-list-item-container {
         display: flex;
-        gap: 1.6rem;
         width: 100%;
     }
 
@@ -55,18 +54,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 12rem;
+        width: 8rem;
         list-style-type: none;
-        cursor: pointer;    
+        cursor: pointer;
     }
 
     .list-item-ancor {
         text-decoration: none;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         color: #3b2525;
         font-family: "Poppins", sans-serif;
         font-weight: 300;
         position: relative;
+        text-transform: uppercase;
+        letter-spacing: .2rem;  
     }
 
     .list-item-ancor::after {
@@ -93,6 +94,7 @@
 
     .item-logo {
         width: 20rem;
+        list-style-type: none;
     }
 
     .list-item-ancor-image {
@@ -108,7 +110,30 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 20%;
+        width: 30%;
+    }
+
+    .header-btn-act {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        height: 4rem;
+        border: none;
+        border-radius: 2rem;
+        background-color: #3b2525;
+        color: antiquewhite;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 800;
+        cursor: pointer;
+        transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease; /* Transições suaves */
+    }
+
+    .header-btn-act:hover {
+        background-color: antiquewhite;
+        border: .2rem solid #3b2525;
+        color: #3b2525;
     }
 
 </style>
